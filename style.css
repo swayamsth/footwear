@@ -80,19 +80,34 @@ a,.btn{
 }
 
 .btn{
-    background-color: var(--black);
-    color: var(--white);
     font-size: 1.8rem;
     padding: 14px 25px;
     border: 1px solid var(--border-color, var(--black));
-    border-radius: 30px;
     cursor: pointer;
+}
+
+.btn-primary{
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .btn-primary:is(:hover, :focus){
     background: var(--onyx);
     color: var(--white);
 }
+
+.btn-secondary{
+    border: none;
+    background: none;
+    color: var(--white);
+    font-size: 32px;
+    font-weight: var(--fw-700);
+}
+
+.btn-secondary:is(:hover, :focus){
+    color: gray;
+}
+
 /* HEADER */
 
 .search, .heart, .user, .cart{
@@ -181,4 +196,37 @@ a:hover{
     font-size: 1.8rem;
     max-width: 46ch;
     margin-bottom: 25px;
+}
+
+/* banner */
+
+/* .banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border: 1px solid pink;
+} */
+
+/* collection */
+
+.collection-card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-block: 45px 25px;
+    border-radius: 30px;
+}
+
+.collection-list{
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    align-items: center;
 }
