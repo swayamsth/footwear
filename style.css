@@ -108,6 +108,19 @@ a,.btn{
     color: gray;
 }
 
+.btn-shop{
+    border: none;
+    background: none;
+    color: var(--black);
+    font-size: 24px;
+    font-weight: var(--fw-700);
+    cursor: pointer;
+}
+
+.btn-shop:is(:hover, :focus){
+    color: var(--onyx);
+}
+
 /* HEADER */
 
 .search, .heart, .user, .cart{
@@ -200,15 +213,23 @@ a:hover{
 
 /* banner */
 
-/* .banner{
+.banner{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 200px;
-    border: 1px solid pink;
-} */
+    height: 150px;
+    /* border: 1px solid pink; */
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+}
 
 /* collection */
+
+.section.collection{
+    padding-block: 10px;
+}
 
 .collection-card{
     background-repeat: no-repeat;
