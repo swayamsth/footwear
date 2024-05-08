@@ -351,3 +351,28 @@ a:hover{
 #radio3:checked ~ .slide-nav-auto .auto-btn3{
     background: var(--white);
 }
+
+/* SHOE COLLECTION */
+
+.section.shoe-collection{
+    padding-block: 10px;
+}
+
+.shoe-collection div hr{
+    width: 80px;
+    height: 5px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--black);
+}
+
+.shoe-collection div h2{
+    font-size: 36px;
+}
+
+.headline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
