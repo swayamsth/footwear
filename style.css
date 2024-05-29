@@ -279,6 +279,7 @@ a:hover{
 
 .slide{
  width: 20%;
+ height: 466px;
  transition: 2s;
 }
 
@@ -352,13 +353,13 @@ a:hover{
     background: var(--white);
 }
 
-/* SHOE COLLECTION */
+/* PRODUCT COLLECTION */
 
-.section.shoe-collection{
+.section.product-collection{
     padding-block: 10px;
 }
 
-.shoe-collection div hr{
+.product-collection div hr{
     width: 80px;
     height: 5px;
     border-radius: 30px;
@@ -366,7 +367,7 @@ a:hover{
     background-color: var(--black);
 }
 
-.shoe-collection div h2{
+.product-collection div h2{
     font-size: 36px;
 }
 
@@ -375,4 +376,15 @@ a:hover{
     justify-content: center;
     align-items: center;
     gap: 5rem;
+}
+
+.image-contain{
+    width: 324px;
+    height: 406px;
+    object-fit: cover;
+}
+
+.card-action-btn{
+    width: 30px;
+    height: 30px;
 }

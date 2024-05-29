@@ -44,7 +44,7 @@
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem inventore amet assumenda. Aut deleniti eum voluptatibus velit quo!
                         </p>
                         
-                        <button class="btn btn-primary">Shop Now</button>
+                        <a href="#products"><button class="btn btn-primary">Shop Now</button></a>
                     </div>
                 </section>
 
@@ -139,13 +139,55 @@
 
                 </section>    
 
-                <!-- OUR TOP PICKS -->
-                <section class="section shoe-collection">
+                <!-- PRODUCT SECTION -->
+                <section class="section product-collection" id="products">
                     <div class="headline">
                         <hr>
                         <h2>OUR TOP PICKS</h2>
                         <hr>
                     </div>
+
+                    <ul class="product-list">
+                        <li class="product-item">
+                            <div class="product-card" tabindex="0">
+                                <figure class="card-banner">
+                                    <img src="./images/shop-icons/shoe1.jpg" loading="lazy" alt="cool-shoe" class="image-contain">
+
+                                    <div class="card-badge">New</div>
+
+                                    <ul class="card-action-list">
+                                        <li class="class-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-1" style="background: url(./images/icons/cart-outline.svg)"></button>
+
+                                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                                        </li>
+
+                                        <li class="class-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-2" style="background: url(./images/icons/heart-outline.svg)"></button>
+
+                                            <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                                        </li>
+
+                                        <li class="class-action-item">
+                                            <button class="card-action-btn" aria-labelledby="card-label-3" style="background: url(./images/icons/eye-outline.svg)"></button>
+                                            
+                                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                                        </li>
+                                    </ul>
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-cat">Men / Women</div>
+                                    
+                                    <h3 class="card-title">
+                                        <a href="#">Running Shoes</a>
+                                    </h3>
+
+                                    <data class="card-price" value="119.99">A$119.99</data>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </section>
             </article>
         </main>
