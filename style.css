@@ -121,10 +121,16 @@ a,.btn, .btn-shop{
     color: var(--onyx);
 }
 
+.product-card{
+    width: 300px;
+    height: auto;
+}
+
 .card-banner{
     position: relative;
     width: 300px;
     height: 376px;
+    border-radius: 30px;
     overflow: hidden;
 }
 
@@ -198,8 +204,45 @@ a,.btn, .btn-shop{
     transition: var(--transition-1);
 }
 
-.card-action-btn:is(:hover, :focus) + .card-action-tooltip{
+.card-action-btn:hover + .card-action-tooltip{
     opacity: 1;
+}
+
+.card-content{
+    padding: 24px 15px 0;
+    text-align: center;
+}
+
+.card-cat{
+    font-family: var(--ff-inter);
+    color: var(--lightgrey);
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+}
+
+.product-card .card-title{
+    margin-bottom: 12px;
+}
+
+.product-card .card-title > a{
+    color: inherit;
+    transition: var(--transition-1);
+}
+
+.product-card .card-title > a:hover{
+    text-decoration: none;
+    color: var(--onyx);
+}
+
+.card-price{
+    color: var(--red);
+    font-family: var(--ff-inter);
+    font-weight: var(--fw-600);
+}
+
+.card-price del{
+    color: var(--lightgreysale);
+    margin-left: 8px;
 }
 
 /* HEADER */
@@ -457,6 +500,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    margin-bottom: 60px;
 }
 
 .card-action-btn{
@@ -465,6 +509,8 @@ a:hover{
 }
 
 .product-list{
-    display: grid;
-    gap: 50px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 50px 25px; */
 }
