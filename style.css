@@ -97,6 +97,7 @@ a,.btn, .btn-shop{
 }
 
 .btn-secondary{
+    text-shadow: 0 4px 4px hsl(0deg 0% 0% / 25%);
     border: none;
     background: none;
     color: var(--white);
@@ -135,6 +136,7 @@ a,.btn, .btn-shop{
 }
 
 .image-contain{
+    /* cursor: pointer; */
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -180,6 +182,7 @@ a,.btn, .btn-shop{
 }
 
 .card-action-btn{
+    cursor: pointer;
     background-color: var(--white);
     padding: 3px;
     border: none;
@@ -217,11 +220,11 @@ a,.btn, .btn-shop{
     font-family: var(--ff-inter);
     color: var(--lightgrey);
     font-size: 1.6rem;
-    margin-bottom: 12px;
+    margin-bottom: 3px;
 }
 
 .product-card .card-title{
-    margin-bottom: 12px;
+    margin-bottom: 3px;
 }
 
 .product-card .card-title > a{
@@ -311,7 +314,7 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
-    min-height: 500px;
+    min-height: 575px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -510,7 +513,10 @@ a:hover{
 
 .product-list{
     display: flex;
+    max-width: 1400px;
+    margin: auto;
+    gap: 50px 0;
     justify-content: space-around;
-    align-items: center;
-    /* gap: 50px 25px; */
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
