@@ -528,3 +528,18 @@ a:hover{
 }
 
 /* Service */
+
+.service{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.service-col{
+    width: 500px;
+    text-align: center;
+}
+
+.service-col svg, .service-col h2{
+    margin-bottom: 10px;
+}
