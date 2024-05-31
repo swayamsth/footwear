@@ -128,6 +128,28 @@ a,.btn, .btn-shop{
     color: var(--onyx);
 }
 
+.btn-explore{
+    margin: auto;
+    /* max-height: 66px; */
+    /* margin-top: 60px; */
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: none;
+    border: 2px solid var(--black);
+    padding: 20px 50px ;
+}
+
+.btn-explore > p{
+    font-family: var(--ff-inter);
+    font-weight: var(--fw-600);
+}
+
+.btn-explore:hover{
+    background: var(--black);
+    color: var(--white);
+}
+
 .product-card{
     width: 300px;
     height: auto;
@@ -492,7 +514,7 @@ a:hover{
     padding-block: 10px;
 }
 
-.product-collection div hr{
+.product-collection .headline hr{
     width: 80px;
     height: 5px;
     border-radius: 30px;
@@ -525,6 +547,22 @@ a:hover{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: flex-start;
+}
+
+.explore-now{
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-now > hr {
+    width: 450px;
+    margin: 0 50px;
+    height: 2px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--black);
 }
 
 /* Service */
