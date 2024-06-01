@@ -11,6 +11,7 @@
     --lightgreysale: hsl(0, 0%, 74%);
     --red: hsl(351, 99%, 37%);
     --redsale: hsl(351, 81%, 49%);
+    --night: hsl(0, 2%, 8%);
 
     /* typography */
     --ff-poppins: 'Poppins', sans-serif;
@@ -147,6 +148,15 @@ a,.btn, .btn-shop{
 
 .btn-explore:hover{
     background: var(--black);
+    color: var(--white);
+}
+
+.btn-reverse{
+    border: 2px solid var(--white);
+    background: none;
+}
+
+.btn-reverse > a {
     color: var(--white);
 }
 
@@ -580,4 +590,79 @@ a:hover{
 
 .service-col svg, .service-col h2{
     margin-bottom: 10px;
+}
+
+.service-col p {
+    font-weight: var(--fw-300);
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--night);
+    color: var(--white);
+    border-radius: 0 200px 0 0;
+    height: 75vh;
+}
+
+.left-side{
+    margin-top: 60px;
+    padding-left: 60px;
+}
+
+.right-side{
+    margin-top: 120px;
+    padding-right: 120px;
+}
+
+.logo-reverse{
+    font-family: var(--ff-league);
+    font-size: 60px;
+    font-weight: var(--fw-700);
+    letter-spacing: -3.25px;
+}
+
+.logo-reverse:hover{
+    cursor: default;
+}
+
+.social, .informations > li > a{
+    color: var(--white);
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-logo > hr {
+    width: 200px;
+    height: 3px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--white);
+}
+
+.socials{
+    display: flex;
+    gap: 2.25rem;
+    align-items: center;
+}
+
+.footer-links{
+    display: flex;
+    gap: 10rem;
+    align-items: flex-start;
+}
+
+.right-side > button{
+    padding: 20px 100px;
+}
+
+.right-side > p{
+    max-width: 284px;
+    /* text-align: center; */
 }
