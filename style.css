@@ -603,7 +603,7 @@ footer{
     background-color: var(--night);
     color: var(--white);
     border-radius: 0 200px 0 0;
-    height: 70vh;
+    height: 75vh;
     width: 100%;
 }
 
@@ -717,7 +717,7 @@ footer{
 }
 
 .copyright{
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     gap: 5rem;
@@ -726,7 +726,7 @@ footer{
 .copyright > hr{
     margin-left: 60px;
     width: 70%;
-    height: 3px;
+    height: 1px;
     border-radius: 30px;
     border: none;
     background-color: var(--white);
