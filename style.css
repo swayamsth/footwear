@@ -601,6 +601,7 @@ a:hover{
 footer{
     display: flex;
     justify-content: space-between;
+    font-family: var(--ff-inter);
     background-color: var(--night);
     color: var(--white);
     border-radius: 0 200px 0 0;
@@ -636,6 +637,7 @@ footer{
     display: flex;
     align-items: center;
     gap: 50px;
+    margin-bottom: 40px;
 }
 
 .footer-logo > hr {
@@ -646,10 +648,37 @@ footer{
     background-color: var(--white);
 }
 
+.contact > a > button, .right-side > a > button{
+    font-family: var(--ff-inter);
+    color: var(--white);
+}
+
+.contact > a > button:hover, .right-side > a > button:hover{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.contact > a > button{
+    padding: 20px 50px;
+}
+
+.contact > h2{
+    margin-bottom: 15px;
+}
+
 .socials{
     display: flex;
     gap: 2.25rem;
     align-items: center;
+    margin-bottom: 40px;
+}
+
+.informations > li{
+    margin-top: 15px;
+}
+
+.informations > li > a{
+    font-weight: var(--fw-300);
 }
 
 .footer-links{
@@ -658,11 +687,27 @@ footer{
     align-items: flex-start;
 }
 
-.right-side > button{
+.right-side > a > button{
     padding: 20px 100px;
 }
 
 .right-side > p{
+    margin-top: 14px;
+    margin-bottom: 110px;
     max-width: 284px;
-    /* text-align: center; */
+    font-size: 12px;
+    font-weight: var(--fw-300);
+}
+
+.about-us{
+    font-size: 70px;
+    border: none;
+    color: var(--white);
+    background: none;
+}
+
+.about-us:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white);
 }
